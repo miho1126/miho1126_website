@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="swiper.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .hogehoge {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      background: no-repeat;
+    }
+    .swiper-slide img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="http://www.hinata-miyazaki.jp/download/documents/16682_20150525203105-1.jpg" alt="日本のひなた宮崎県" width="224" height="131"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- nav終わり -->
+
+    <!-- swiper -->
+    <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-shinwa.jpg" class="img-fluid" alt="Responsive image">
+
+    <div class="hogehoge">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-namitabi.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-nikutabi.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-dancing.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-wadaiko.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-agriculture.jpg" alt=""></div>
+      </div>
+  
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div class="container mt-5">
+      <h1>FEATURE</h1>
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <img src="img/food.jpg" alt="" class="img-fluid">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          </div>
+        </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="img/star.jpg" alt="" class="img-fluid">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            </div>
+          </div>
+            <div class="col-4">
+              <div class="card">
+                <img src="img/ship.jpg" alt="" class="img-fluid">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <form>
+            <h1 class="mt-5">CONTACT</h1>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">名前</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="山田　太郎">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">メールアドレス</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">メッセージ</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <p class="text-center">
+            <input type="submit" value="送信" class="btn btn-primary px-5">
+            </p>
+          </form>
+    </div>
+    <footer class="bg-warning p-1 mt-5 text-center">
+        (C) コピーライト
+    </footer>
+
+
+      <!-- Swiper JS -->
+    <script src="swiper.min.css"></script>
+    <!-- Initialize Swiper -->
+  <script>
+      let swiper = new Swiper('.hogehoge', {
+        loop:true,
+        pagination: {
+          el:'.swiper-pagination',
+          clickable:true,
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      });
+    </script>
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
