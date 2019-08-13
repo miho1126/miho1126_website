@@ -6,59 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+  <link rel="stylesheet" href="../miho_website/assets/swiper.min.css">
   <link rel="stylesheet" href="../miho_website/assets/style.css">
 </head>
 <body>
   <div class="container">
-      <div class="menu1 container">
+    <div class="header">
+      <nav class="navbar">
         <span class="menuBtn">
           menu
         </span>
         <ul id="menu">
-          <li>メニュー</li>
-          <li>メニュー</li>
-          <li>メニュー</li>
-        </ul>
-      </div>
-
-
-    <nav class="navbar">
-      <img src="http://www.hinata-miyazaki.jp/download/documents/16682_20150525203105-1.jpg" alt="日本のひなた宮崎県" width="224" height="131">
-      <span class="menuBtn">
-        menu
-      </span>
-      <ul id="menu">
-        <li>
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li>
-          <a class="nav-link dropdown-toggle" href="#">
-            Dropdown
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+          <li>HOME</li>
+          <li>
+            <a class="nav-link" href="https://www.pref.miyazaki.lg.jp/">Link</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+          <li>
+            <a class="nav-link disabled" href="#form-style-2-heading">Contact</a>
           </li>
         </ul>
-      </div>
-    </nav>
-    <!-- nav終わり -->
+      </nav>
+    </div>
 
-    
-    <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-shinwa.jpg" class="img-fluid" alt="Responsive image">
+    <div class="main">
+      <img src="http://www.hinata-miyazaki.jp/download/documents/16682_20150525203105-1.jpg" alt="日本のひなた宮崎県">
+    </div>
 
     <!-- swiper -->
-    <div class="hogehoge">
+    <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-namitabi.jpg" alt=""></div>
         <div class="swiper-slide"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-nikutabi.jpg" alt=""></div>
@@ -75,62 +50,66 @@
 
 
     <div class="container mt-5">
-      <h1>FEATURE</h1>
-      <div class="row">
-        <div class="col-4">
-          <div class="card">
-            <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-hi-up.jpg" alt="" class="img-fluid">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          </div>
-        </div>
-          <div class="col-4">
-            <div class="card">
-              <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-mu-up.jpg" alt="" class="img-fluid">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card">
-              <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-ka-right.jpg" alt="" class="img-fluid">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <form>
-        <h1 class="mt-5">CONTACT</h1>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">名前</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="山田　太郎">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">メールアドレス</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">メッセージ</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <p class="text-center">
-        <input type="submit" value="送信" class="btn btn-primary px-5">
-        </p>
-      </form>
+      <h1>みやざき犬</h1>
+      <div class="card wrapper">
+        <section class="card">
+          <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-hi-up.jpg" alt="" class="img-fluid">
+          <p class="card-text">ひぃくん
+          <br>
+          かぶりもの : 日向夏(ひゅうがなつ)
+          <br>
+          みやざき特産の柑橘
+          </p>
+          <div class="btn"><a href="http://ouendan.kanko-miyazaki.jp/">read more</a></div>
+        </section>
+        <section class="card">
+          <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-mu-up.jpg" alt="" class="img-fluid">
+          <p class="card-text">むぅちゃん
+          <br>
+          かぶりもの : フェニックス
+          <br>
+          南国ムード溢れる宮崎県の木
+          </p>
+          <div class="btn"><a href="http://ouendan.kanko-miyazaki.jp/">read more</a></div>
+        </section>
+        <section class="card">
+          <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-ka-right.jpg" alt="" class="img-fluid">
+          <p class="card-text">かぁくん
+          <br>
+          かぶりもの : 地鶏
+          <br>
+          宮崎の郷土料理！
+          </p>
+          <div class="btn"><a href="http://ouendan.kanko-miyazaki.jp/">read more</a></div>
+        </section>
+      </section>
     </div>
   </div>
-    <footer class="bg-warning p-1 mt-5 text-center">
-        (C) コピーライト
-    </footer>
+  <!-- contact -->
+  <div class="form-style-2">
+    <div id="form-style-2-heading">Contact</div>
+    <form action="" method="post">
+      <label for="field1"><span>名前<span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+      <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
+      <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+      
+      <label><span> </span><input type="submit" class="submit" value="Submit" /></label>
+    </form>
+  </div>
+    <!--/ contact -->
+  <div class="btn-wrapper">
+    <span class="btn js-scroll">ページTOPに戻る</span>
+  </div>
+  <footer class="text-center">
+        (C) miyazaki hometown
+  </footer>
+  
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="../miho_website/swiper.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
