@@ -28,6 +28,39 @@ $(function(){
     return false;
   });
 
+  // 画像のフェードイン・フェードアウト
+  $('#wrapper .movie').hide();
+  $('#wrapper .map').each(function(i){
+    if($(this).delay(500 * i).fadeIn(1000)){
+    }
+    
+  });
+  $(this).delay(500 * i).fadeIn(1000)
+  
+
+  // これ使う！！！！！　消える！出現！　一回決して置かないと表示されないからこれは2つで１セット。
+  // 出現
+  $('#js-show-btn').on('click',function(){
+    //  ミリビョウ
+    // alideUpも可能
+    // slideDownも可能
+     $('#js-target-element').fadeIn(2000)
+   });
+ // 消える
+    $('#js-hide-btn').on('click',function(){
+     //  ミリビョウ
+     // alideUpも可能
+      $('#js-target-element').fadeOut(2000)
+    });
+
+
+
+
+
+
+
+
+  // ----slider------
   let swiper = new Swiper ('.swiper-container',{
     loop: true,
     slidesPerView: 1,

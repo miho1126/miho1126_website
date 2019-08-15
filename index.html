@@ -5,12 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    .map {
+      position: relative;
+      height: 0;
+      width: 100%;
+      padding-top: 56.25%;
+      overflow: hidden;
+    }
+    .map iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" href="../miho_website/assets/swiper.min.css">
-  <link rel="stylesheet" href="../miho_website/assets/style.css">
+  <link rel="stylesheet" href="assets/swiper.min.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <div class="container">
+    <div class="header nav-left">
+      <ul>
+        <li>トップ</li>
+        <li>>宮崎ってどこ？</li>
+        <li>>みやざき犬って？</li>
+        <li>>地元見てっきゃん！</li>
+        <li>>方言</li>
+        <li><a href="https://www.pref.miyazaki.lg.jp/">>宮崎情報サイトへ</a></li>
+        <li><a href="#form-style-2-heading">>問い合わせ</a></li>
+      </ul>
+      <img src="http://www.hinata-miyazaki.jp/download/documents/16682_20150525203105-1.jpg" alt="日本のひなた宮崎県">
+    </div>
     <div class="header">
       <nav class="navbar">
         <span class="menuBtn">
@@ -30,6 +59,19 @@
 
     <div class="main">
       <img src="http://www.hinata-miyazaki.jp/download/documents/16682_20150525203105-1.jpg" alt="日本のひなた宮崎県">
+    </div>
+
+
+    <div id="place">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d865279.1007956449!2d130.73404931955184!3d32.09638060609391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538ad27167ffc61%3A0x28f8f7ca786b192a!2z5a6u5bSO55yM!5e0!3m2!1sja!2sjp!4v1565704457178!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <div class="wrapper">
+        <div class="movie">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/i-v2ZV8VTPg?start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
 
     <!-- swiper -->
@@ -87,7 +129,7 @@
   </div>
   <!-- contact -->
   <div class="form-style-2">
-    <div id="form-style-2-heading">Contact</div>
+    <div id="form-style-2-heading">問い合わせ</div>
     <form action="" method="post">
       <label for="field1"><span>名前<span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
       <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
@@ -109,7 +151,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-  <script src="../miho_website/swiper.min.js"></script>
+  <script src="swiper.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -8,7 +8,6 @@ body{
   line-height:1.0;
   font-size:14px;
   background: rgb(252, 178, 20);
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   color:#ffff;
   margin: 0;
   padding: 0;
@@ -17,6 +16,37 @@ body{
 
 .container {
   padding: 0 20px 0 20px;
+}
+
+.header .nav-left {
+
+}
+.nav-left li {
+  list-style: none;
+  padding-left: 20px;
+  padding-top: 30px;
+  text-align: right;
+  float: left;
+  font-size: 1.5em;
+}
+
+.nav-left ul {
+margin-left: 15%;
+margin-top: 30px;;
+}
+
+.nav-left img {
+  display: flex;
+  position: absolute;
+  text-align: left;
+  width: 200px;
+  margin-left: 40px;
+}
+
+.navbar,
+.main img {
+  overflow: hidden;
+  display: none;
 }
 
 .header{
@@ -97,6 +127,79 @@ body{
 
 }
 
+/* ------地図------- */
+#place {
+  display: flex;
+  padding-top: 100px;
+  width: 60%;
+  height: 800px;
+  margin-left: 20%;
+  position: relative;
+}
+
+
+.map{
+  z-index: 0;
+  position: absolute;
+  opacity: 1;
+}
+
+.movie {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center; 
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  transition: all .5s ease-in;
+  animation-delay:1s;
+}
+
+@keyframes movie {
+	0% {
+	    opacity: 0;
+	    animation-timing-function: ease-in;
+	}
+	8% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	17% {
+	    opacity: 1;
+	    transform: scale(1.1) rotate(0deg);
+	}
+	25% {
+	    opacity: 1;
+	    transform: scale(1.1) rotate(0deg);
+	}
+	100% { opacity: 1}
+}
+
+@keyframes map {
+	0% {
+	    opacity: 1;
+	    animation-timing-function: ease-in;
+	}
+	8% {
+	    opacity: 0.5;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+	17% {
+	    opacity: 0.5;
+	    transform: scale(1.1) rotate(0deg);
+	}
+	25% {
+	    opacity: 0;
+	    transform: scale(1.1) rotate(0deg);
+	}
+	100% { opacity: 0}
+}
+
+/* ------swiper-------- */
 .swiper-slide img{
   width: 60%;
   object-fit: cover;
