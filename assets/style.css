@@ -6,44 +6,45 @@
 
 body{
   line-height:1.0;
-  font-size:14px;
+  font-size: 16px;
   background: rgb(252, 178, 20);
   color:#ffff;
-  margin: 0;
+  /* margin: 0;
   padding: 0;
+  position: relative; */
+}
+
+/* header始まり */
+.nav-left{
+  display: flex;
   position: relative;
+  width: 100%;
+}
+.nav-left img {
+  position: absolute;
+  text-align: left;
+  width: 200px;
+  margin: 40px 0 0 40px;
 }
 
-.container {
-  padding: 0 20px 0 20px;
+.nav-left ul {
+margin-left: 15%;
+margin-top: 30px;
+width: 100%;
 }
 
-.header .nav-left {
-
-}
 .nav-left li {
   list-style: none;
   padding-left: 20px;
   padding-top: 30px;
   text-align: right;
   float: left;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
 }
+/* header終わり */
 
-.nav-left ul {
-margin-left: 15%;
-margin-top: 30px;;
-}
-
-.nav-left img {
-  display: flex;
-  position: absolute;
-  text-align: left;
-  width: 200px;
-  margin-left: 40px;
-}
-
-.navbar,
+/* メディアクエリ　携帯対応時のメニュー*/
+/* .navbar,
 .main img {
   overflow: hidden;
   display: none;
@@ -98,7 +99,7 @@ margin-top: 30px;;
   position: absolute;
   top: 10px;
   left: 8px;
-  
+
   transition: .3s;
 }
 
@@ -114,106 +115,131 @@ margin-top: 30px;;
 .menuBtn.on::after {
   box-shadow: none;
   transform: rotate(-45deg) translate(7px, -5px);
+} */
+
+/* メディアクエリ　携帯対応時のメニュー　終わり*/
+
+
+/* -----メインここから--------- */
+/* -----横からメニューバーこんにちわ----- */
+/* 縦並び */
+#aside {
+  position: fixed;
+  width: 750px;
+  display: flex;
+  animation-duration: 2s;
+  animation-name: LeftToRight;/* アニメーション名 */
+}
+#aside .nav1 {
+  width: 150px;
+  height: 40px;
+  margin: 0;
 }
 
-/* ---------nav終わり---------- */
-
-/* -----メイン--------- */
-
-.main img {
-  margin-left: 60%;
-  width: 40%;
-  padding: 10px;
-
+#aside .nav1 li {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  list-style: none;
 }
 
-/* ------地図------- */
+#aside .nav1 li a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color:pink;
+  color: blue;
+  font-size: 14px;
+  line-height: 2.8;
+  text-decoration: noe;
+  border-top: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+#aside .nav1 > li:hover > a {
+  color:green;
+  background: rgb(240, 171, 234);
+}
+
+#aside .nav1 li ul {
+  width: 150px;
+  display: none;
+  position: relative;
+  top: -40px;
+  left: 110px;
+}
+
+#aside .nav > li li:hover > a {
+  color: rgb(75, 238, 11);
+  background-color: #f7167f;
+}
+
+/* メニューが左から右へこんにちわ */
+/* 「RightToLeft」の動作内容 */
+@keyframes LeftToRight {
+  0% {
+    opacity: 0;/* 透明 */
+    transform: translateX(-100px);/* X軸方向に50px */
+  }
+  100% {
+    opacity: 1;/* 不透明 */
+    transform: translateX(0px);
+  }
+}
+
+/* 横からメニューバーこんにちわ　終わり */
+
+/* ------宮崎県地図　始まり------- */
+.container{
+  text-align: center;
+}
+h1{
+  margin-top: 50px;
+}
+
 #place {
   display: flex;
-  padding-top: 100px;
+  padding-top: 30px;
   width: 60%;
-  height: 800px;
   margin-left: 20%;
-  position: relative;
 }
-
 
 .map{
   z-index: 0;
-  position: absolute;
   opacity: 1;
+  animation-name: map;
+  animation-duration: 3s;
 }
 
+h2{
+  margin-top: 100px;
+}
 .movie {
   width: 100%;
-  margin-top: 60px;
-  display: flex;
-  justify-content: center; 
-  cursor: pointer;
-  position: absolute;
-  z-index: 1;
-  opacity: 1;
-  transition: all .5s ease-in;
-  animation-delay:1s;
-}
-
-@keyframes movie {
-	0% {
-	    opacity: 0;
-	    animation-timing-function: ease-in;
-	}
-	8% {
-	    opacity: 1;
-	    transform: scale(1.05);
-	    animation-timing-function: ease-out;
-	}
-	17% {
-	    opacity: 1;
-	    transform: scale(1.1) rotate(0deg);
-	}
-	25% {
-	    opacity: 1;
-	    transform: scale(1.1) rotate(0deg);
-	}
-	100% { opacity: 1}
-}
-
-@keyframes map {
-	0% {
-	    opacity: 1;
-	    animation-timing-function: ease-in;
-	}
-	8% {
-	    opacity: 0.5;
-	    transform: scale(1.05);
-	    animation-timing-function: ease-out;
-	}
-	17% {
-	    opacity: 0.5;
-	    transform: scale(1.1) rotate(0deg);
-	}
-	25% {
-	    opacity: 0;
-	    transform: scale(1.1) rotate(0deg);
-	}
-	100% { opacity: 0}
+  margin-top: 40px;
 }
 
 /* ------swiper-------- */
-.swiper-slide img{
-  width: 60%;
-  object-fit: cover;
-} 
-
-
-.swiper-slide {
-  margin-top: 20px;
+.miyazakiken {
   text-align: center;
-  /* Center slide text vertically */
+}
+h3{
+  margin-top: 100px;
+  font-size: 2em;
+}
+.miyazakiken p{
+  font-size: 2em;
+}
+.swiper-container{
+  margin: 30px 100px 0 100px;
+}
+.swiper-wrapper {
+  padding: 60px 0;
+}
+.swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -224,73 +250,85 @@ margin-top: 30px;;
   align-items: center;
   background: no-repeat;
 }
-
-
-h1{
-  text-align: center;
-}
-.wrapper {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  display: block;
-  position: relative;
+.swiper-slide .card img{
+  /* object-fit: cover; */
+  width: 280px;
 }
 
-.card img{
-  height: 100px;
-  width: 100px;
-  float: left;
-  margin-right: 10px;
-}
-
-.card::after {
+/* .swiper-slide .card::after {
   clear: both;
   content: '';
   display: table;
-}
+} */
 
-.card-text {
+.swiper-slide .card-text {
   padding-top: 10px;
-  line-height: 20px;
+  line-height: 1.5;
 }
 
-a {
-  /* text-decoration: none; */
+.swiper-slide a {
+  text-decoration: none;
   color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 5px 15px;
 }
 
+.jimoto{
+  margin: 60px 100px 0 100px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5em;
+}
+
+.grid{
+  margin-top: 100px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-img img{
+  width: 90%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/*  <!-- form --> */
 .form-style-2{
 	/* max-width: 500px; */
-	padding: 20px 12px 10px 20px;
+  padding: 20px 12px 10px 20px;
 }
-.form-style-2-heading{
-	border-bottom: 2px solid #ddd;
+#form-style-2-heading{
 	margin-bottom: 20px;
 	font-size: 1.5em;
-	padding-bottom: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+}
+.form-field{
+  width: 100%;
+  margin-left:20%;
 }
 .form-style-2 label{
 	display: block;
-	margin: 0px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
 }
 .form-style-2 label > span{
 	width: 100px;
 	font-weight: bold;
 	float: left;
 	padding-top: 8px;
-	padding-right: 5px;
+  padding-right: 5px;
+
 }
 .form-style-2 span.required{
-	color:red;
+  color:red;
 }
 
 .form-style-2 input.input-field, .form-style-2 .select-field{
-	width: 48%;	
+	width: 48%;
 }
-.form-style-2 input.input-field, 
-.form-style-2 .textarea-field, 
+.form-style-2 input.input-field,
+.form-style-2 .textarea-field,
  .form-style-2 .select-field{
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -305,7 +343,7 @@ a {
 	padding: 7px;
 	outline: none;
 }
-.form-style-2 .input-field:focus, 
+.form-style-2 .input-field:focus,
 .form-style-2 .select-field:focus{
 	border: 1px solid #0C0;
 }
@@ -315,6 +353,7 @@ a {
 }
 .form-style-2 input[type=submit],
 .form-style-2 input[type=button]{
+  margin-left: 20%;
 	border: none;
 	padding: 8px 15px 8px 15px;
 	background: #FF8500;
@@ -332,24 +371,47 @@ a {
 	color: #fff;
 }
 
-.btn-wrapper {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.js-scroll {
+/* .js-scroll {
   background-color: orange;;
   padding: 10px;
-}
+} */
 
 
 .text-center {
-  text-align: center; 
+  text-align: center;
+  margin-top: 30px;
 }
 
+/* トップへ戻るがふわっと出現 */
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 77%;
+  line-height: 2.5;
+}
+#page-top i {
+  font-size: 3em;
+}
+
+#page-top a {
+  background: pink;
+  text-decoration: none;
+  color:blue;
+  width: 100px;
+  padding: 15px 0 5px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+#page-top a:hover {
+  text-decoration: none;
+  background: rgb(240, 171, 234);
+}
+/* トップへ戻るがふわっと出現 　終わり*/
 
 /* SP MediaQuery */
-@media only screen and (min-width:768px) {
+/* @media only screen and (min-width:768px) {
   .menuBtn{
     margin-left: 45%;
     top: 50px;
@@ -367,14 +429,14 @@ a {
 
   .swiper-container img {
     /* width: auto; */
-    object-fit: cover;
-  }
+    /* object-fit: cover;
+  } */
 
-  h1 {
+  /* h1 {
     font-size: 5em;
-  }
+  } */
 
-  .mt-5 {
+  /* .mt-5 {
     padding-bottom: 100px;
   }
 
@@ -433,5 +495,5 @@ a {
     margin-top: 100px;
     font-size: 1.5em;
   }
-}
+} */
 /* SP MediaQuery end */

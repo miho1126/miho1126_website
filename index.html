@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>日本の日向　宮崎県</title>
   <style>
     .map {
       position: relative;
@@ -13,6 +13,7 @@
       padding-top: 56.25%;
       overflow: hidden;
     }
+
     .map iframe {
       position: absolute;
       top: 0;
@@ -22,24 +23,28 @@
     }
   </style>
 
+  <script src="https://kit.fontawesome.com/b8c23dc1e8.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" href="assets/swiper.min.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header nav-left">
-      <ul>
-        <li>トップ</li>
-        <li>>宮崎ってどこ？</li>
-        <li>>みやざき犬って？</li>
-        <li>>地元見てっきゃん！</li>
-        <li>>方言</li>
-        <li><a href="https://www.pref.miyazaki.lg.jp/">>宮崎情報サイトへ</a></li>
-        <li><a href="#form-style-2-heading">>問い合わせ</a></li>
-      </ul>
-      <img src="http://www.hinata-miyazaki.jp/download/documents/16682_20150525203105-1.jpg" alt="日本のひなた宮崎県">
-    </div>
+  <header class="nav-left">
+    <img src="http://www.hinata-miyazaki.jp/download/documents/16682_20150525203105-1.jpg" alt="日本のひなた宮崎県">
+    <ul>
+      <li><i class="fas fa-home"></i></li>
+      <li>>宮崎ってどこ？</li>
+      <li>>みやざき犬って？</li>
+      <li>>地元見てっきゃん！</li>
+      <li>>方言集</li>
+      <li><a href="https://www.pref.miyazaki.lg.jp/">>宮崎情報サイトへ</a></li>
+      <li><a href="#form-style-2-heading">>問い合わせ</a></li>
+    </ul>
+  </header>
+  <!-- headerここまで -->
+
+  <!-- メディアクエリ携帯用メニュー -->
+  <!-- <div class="container">
     <div class="header">
       <nav class="navbar">
         <span class="menuBtn">
@@ -55,97 +60,178 @@
           </li>
         </ul>
       </nav>
+    </div> -->
+  <!-- メディアクエリ携帯用メニュー -->
+
+  <!-- mainここから -->
+  <main>
+    <!-- 横からメニューバーこんにちわ -->
+    <!-- 縦並び -->
+    <div id="aside">
+      <ul class="nav1">
+        <li><a href="#"><i class="fas fa-home"></i></a></li>
+        <li><a href="#">>宮崎ってどこ？</a>
+          <ul>
+            <li><a href="#">b1</a></li>
+            <li><a href="#">b2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">>みやざき犬って？</a>
+          <ul>
+            <li><a href="#">c1</a></li>
+            <li><a href="#">c2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">>地元見てっきゃん！</a>
+          <ul>
+            <li><a href="#">d1</a></li>
+            <li><a href="#">d2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">>方言集</a>
+          <ul>
+            <li><a href="#">e1</a></li>
+            <li><a href="#">e2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">>宮崎情報サイトへ</a>
+          <ul>
+            <li><a href="#">f1</a></li>
+            <li><a href="#">f2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">>問い合わせ</a>
+        </li>
+      </ul>
     </div>
-
-    <div class="main">
-      <img src="http://www.hinata-miyazaki.jp/download/documents/16682_20150525203105-1.jpg" alt="日本のひなた宮崎県">
-    </div>
+    <!-- 横からメニューバーこんにちわ 　ここで終わり-->
 
 
-    <div id="place">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d865279.1007956449!2d130.73404931955184!3d32.09638060609391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538ad27167ffc61%3A0x28f8f7ca786b192a!2z5a6u5bSO55yM!5e0!3m2!1sja!2sjp!4v1565704457178!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <!-- 宮崎県地図 -->
+    <div class="container">
+      <h1>宮崎県ってここ！</h1>
+      <p>九州の一部だよ〜！そして大雑把に言うと右側ね。</p>
+      <div id="place">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d865279.1007956449!2d130.73404931955184!3d32.09638060609391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538ad27167ffc61%3A0x28f8f7ca786b192a!2z5a6u5bSO55yM!5e0!3m2!1sja!2sjp!4v1565704457178!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </div>
-
-      <div class="wrapper">
+      <!-- 宮崎県　youtube動画紹介 -->
+      <h2>テレビで宮崎の観光名所が紹介されました！！！！</h2>
+      <div class="movie_wrapper">
         <div class="movie">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/i-v2ZV8VTPg?start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
 
+    <!-- 宮崎犬紹介　スワイパー -->
     <!-- swiper -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-namitabi.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-nikutabi.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-dancing.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-wadaiko.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-agriculture.jpg" alt=""></div>
+    <div class="miyazakiken">
+      <h3>みやざき犬って？</h3>
+      <p>宮崎県の可愛いゆるキャラちゃんです！</p>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-hi-up.jpg" alt="" class="img-fluid">
+              <p class="card-text">ひぃくん
+                <br>
+                かぶりもの : 日向夏(ひゅうがなつ)
+                <br>
+                みやざき特産の柑橘
+              </p>
+              <div class="btn"><a href="http://ouendan.kanko-miyazaki.jp/">詳細</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-mu-up.jpg" alt="" class="img-fluid" width="300" height="500">
+              <p class="card-text">むぅちゃん
+                <br>
+                かぶりもの : フェニックス
+                <br>
+                南国ムード溢れる宮崎県の木
+              </p>
+              <div class="btn"><a href="http://ouendan.kanko-miyazaki.jp/">詳細</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-ka-right.jpg" alt="" class="img-fluid">
+              <p class="card-text">かぁくん
+                <br>
+                かぶりもの : 地鶏
+                <br>
+                宮崎の郷土料理！
+              </p>
+              <div class="btn"><a href="http://ouendan.kanko-miyazaki.jp/">詳細</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-pagination"></div>
       </div>
-
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <div class="swiper-pagination"></div>
     </div>
 
 
-    <div class="container mt-5">
-      <h1>みやざき犬</h1>
-      <div class="card wrapper">
-        <section class="card">
-          <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-hi-up.jpg" alt="" class="img-fluid">
-          <p class="card-text">ひぃくん
-          <br>
-          かぶりもの : 日向夏(ひゅうがなつ)
-          <br>
-          みやざき特産の柑橘
-          </p>
-          <div class="btn"><a href="http://ouendan.kanko-miyazaki.jp/">read more</a></div>
-        </section>
-        <section class="card">
-          <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-mu-up.jpg" alt="" class="img-fluid">
-          <p class="card-text">むぅちゃん
-          <br>
-          かぶりもの : フェニックス
-          <br>
-          南国ムード溢れる宮崎県の木
-          </p>
-          <div class="btn"><a href="http://ouendan.kanko-miyazaki.jp/">read more</a></div>
-        </section>
-        <section class="card">
-          <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-ka-right.jpg" alt="" class="img-fluid">
-          <p class="card-text">かぁくん
-          <br>
-          かぶりもの : 地鶏
-          <br>
-          宮崎の郷土料理！
-          </p>
-          <div class="btn"><a href="http://ouendan.kanko-miyazaki.jp/">read more</a></div>
-        </section>
-      </section>
+    <div class="jimoto">
+      <h4>地元見てっきゃん！</h4>
+      <p>よ〜く見てみて！ゆるキャラ達が地元の紹介をしてるよ〜！<br>どんな格好しているのかな？<br>想像してみてね〜！宮崎県にはどんな物があるかな〜〜？</p>
+      <div class="grid">
+        <div class="grid-img">
+          <img class="slider" src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-namitabi.jpg" alt="">
+        </div>
+
+        <div class="grid-img">
+          <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-nikutabi.jpg" alt="">
+        </div>
+
+        <div class="grid-img">
+          <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-dancing.jpg" alt="">
+        </div>
+
+        <div class="grid-img">
+          <img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-wadaiko.jpg" alt="">
+        </div>
+
+        <div class="grid-img"><img src="http://ouendan.kanko-miyazaki.jp/illust/images/illust-agriculture.jpg" alt="">
+        </div>
+
+      </div>
     </div>
-  </div>
-  <!-- contact -->
-  <div class="form-style-2">
-    <div id="form-style-2-heading">問い合わせ</div>
-    <form action="" method="post">
-      <label for="field1"><span>名前<span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
-      <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
-      <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
-      
-      <label><span> </span><input type="submit" class="submit" value="Submit" /></label>
-    </form>
-  </div>
-    <!--/ contact -->
-  <div class="btn-wrapper">
-    <span class="btn js-scroll">ページTOPに戻る</span>
-  </div>
+
+    <!-- form -->
+    <div class="form-style-2">
+      <div id="form-style-2-heading">問い合わせ</div>
+      <form action="" method="post" class="form-field">
+        <label for="field1"><span>名前<span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+        <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
+        <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+
+        <label><span> </span><input type="submit" class="submit" value="Submit" /></label>
+      </form>
+    </div>
+    <!--/ form -->
+    <!-- <div class="btn-wrapper">
+      <span class="btn js-scroll">ページTOPに戻る</span>
+    </div> -->
+
+    <!-- トップへ戻るがふわっと出現 -->
+    <div>
+      <p id="page-top"><a href="#wrap"><i class="far fa-hand-point-up"></i>
+          <br>
+          PAGE TOP</a></p>
+    </div>
+  </main>
+  <!-- main　ここまで -->
+
   <footer class="text-center">
-        (C) miyazaki hometown
+    (C) miyazaki hometown
   </footer>
-  
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
